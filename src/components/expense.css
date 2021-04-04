@@ -1,0 +1,97 @@
+.expense-container {
+    width: 100%;
+    height: 100%;
+    background: #efefef;
+}
+.expense-header {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.expense-header h5 {
+    font-size: 24px;
+}
+.expense-body {
+    height: calc(100vh - 110px);
+}
+.add-expense {
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.add-btn, .submit-btn button{
+    border: 1px solid #03A9F4;
+    background: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.add-btn:hover, .submit-btn button:hover {
+    background: #03A9F4;
+    color: #fff;
+}
+.submit-btn {
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 10px;
+}
+.add-expense-form {
+    padding: 10px 20px;
+}
+.form-group {
+    padding: 10px 0;
+}
+.form-control {
+    display: grid;
+    margin-bottom: 20px
+}
+.form-control label {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.form-control input {
+    border: 1px solid #a7a7a7;
+    padding: 8px 6px;
+    font-size: 14px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+.expense-lists.width-55per {
+    width: 55%;
+}
+.expense-list {
+    max-height: 70%;
+}
+.expfile .category {
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 4px;
+}
+.expfile .cost {
+    position: relative;
+    width: 20%;
+    right: 0;
+}
+.actions {
+    width: 30%;
+    text-align: right;
+}
+i.fa.fa-window-close:hover {
+    transform: scale(1.2);
+}
+.actions i {
+    padding-left: 15px;
+    color: red;
+    cursor: pointer;
+}
+.actions button {
+    padding: 1px 10px;
+}
+@media only screen and (max-width: 1000px) {
+    .expense-lists.width-55per {
+        width: 87%;
+    }
+}
